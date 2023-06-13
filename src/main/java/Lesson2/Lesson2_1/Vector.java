@@ -61,4 +61,24 @@ public class Vector {
         return this.scalarMulti(vector2)/(this.vectorLength()*vector2.vectorLength());
 
     }
+
+    /**
+     *
+     * @param vector2, с которым происходит взаимодействие
+     * @return сумма векторов
+     */
+    public Vector vectorSum(Vector vector2) {
+        Vector resultVector = new Vector(this.x + vector2.x, this.y + vector2.y, this.z + vector2.z);
+        return resultVector;
+    }
+
+    /**
+     *
+     * @param vector2, с которым происходит взаимодействие
+     * @return разность векторов
+     */
+    public Vector vectorDif(Vector vector2) {
+        Vector resultVector = new Vector(this.x - vector2.x, this.y - vector2.y, this.z - vector2.z);
+        return resultVector;
+    }
 }
